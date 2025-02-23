@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./script.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col d-flex gap-2 py-5 flex-wrap">
+          <!-- CARD -->
+          <div class="card d-flex align-items-center p-2" style="width: 200px">
+            <img
+              style="width: 100px"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgwD3KnrTzS6JSFmEFymEG3nxpE9Ktm_nU-Q&s"
+              class="card-img-top image-fluid"
+              alt="shampoo"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Shampoo</h5>
+              <p class="card-text">The best shampoo in the world</p>
+              <p class="card-text">
+                <span class="fw-bold">Price:</span> <span>25.24$</span>
+              </p>
+              <a href="#" class="btn btn-primary">Add To Cart</a>
+            </div>
+          </div>
+          <!-- CARD END -->
+          <!-- CARD - NO IMAGE -->
+          <div class="card d-flex align-items-center p-2" style="width: 200px">
+            <img
+              style="width: 100px"
+              src="https://thumb.ac-illust.com/b1/b170870007dfa419295d949814474ab2_t.jpeg"
+              class="card-img-top image-fluid"
+              alt="shampoo"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Shampoo</h5>
+              <p class="card-text">The best shampoo in the world</p>
+              <p class="card-text">
+                <span class="fw-bold">Price:</span> <span>25.24$</span>
+              </p>
+              <a href="#" class="btn btn-primary">Add To Cart</a>
+            </div>
+          </div>
+          <!-- CARD END -->
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="row">
+            <div class="col d-flex flex-column py-5">
+              <div class="text-center fw-bold fs-3 text-danger my-5">
+                No items yet!
+              </div>
+
+              <!-- SHOPPING CARD -->
+              <div class="d-flex align-items-center border-top py-2">
+                <img
+                  style="height: 50px; width: 50px"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgwD3KnrTzS6JSFmEFymEG3nxpE9Ktm_nU-Q&s"
+                  class="card-img-top"
+                  alt="shampoo"
+                />
+                <div class="px-2 flex-fill">
+                  <p class="m-0 fw-bold">Shampoo</p>
+                  <p class="m-0">25.24$</p>
+                </div>
+                <div>
+                  <button class="btn btn-sm btn-outline-danger">
+                    <i class="bi bi-dash"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- SHOPPING CARD END -->
+
+              <!-- SHOPPING CART SUMMARY -->
+              <div
+                class="d-flex justify-content-between border-top border-3 border-primary mt-4 py-2 fs-5"
+              >
+                <div>
+                  <span class="fw-bold">50.48</span>
+                  <span>$</span>
+                </div>
+                <div>
+                  <span class="fw-bold">2</span>
+                  <span>items</span>
+                </div>
+              </div>
+              <!-- SHOPPING CART SUMMARY END -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
