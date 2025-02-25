@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function log(className, e) {
+        console.log(className);
+      }
+    </script>
+  </head>
+  <body>
+    <div
+      class="a"
+      onclick="log('a')"
+      style="margin: 5px; padding: 10px; background: lightcoral"
+    >
+      a
+      <div
+        class="b1"
+        onclick="log('b1', event)"
+        style="margin: 5px; padding: 10px; background: khaki"
+      >
+        b1
+      </div>
+      <div
+        class="b2"
+        onclick="log('b2')"
+        style="margin: 5px; padding: 10px; background: lightblue"
+      >
+        b2
+        <div
+          class="c1"
+          onclick="log('c1')"
+          style="margin: 5px; padding: 10px; background: silver"
+        >
+          c1
+        </div>
+        <div
+          class="c2"
+          onclick="log('c2')"
+          style="margin: 5px; padding: 10px; background: yellowgreen"
+        >
+          c2
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
