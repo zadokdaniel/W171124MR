@@ -1,0 +1,63 @@
+export const images = [
+  {
+    id: 1,
+    src: "https://plus.unsplash.com/premium_photo-1728014306715-d0d06ce95155?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1pbi1zYW1lLXNlcmllc3wxfHx8ZW58MHx8fHx8",
+    alt: "legs",
+    description: "A kid in the street waiting for parents",
+    category: "A",
+  },
+  {
+    id: 2,
+    src: "https://plus.unsplash.com/premium_photo-1728014306021-86fa12dbe6fd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1pbi1zYW1lLXNlcmllc3wyfHx8ZW58MHx8fHx8",
+    alt: "bicycles",
+    category: "A",
+  },
+  {
+    id: 3,
+    src: "https://plus.unsplash.com/premium_photo-1729092547656-1350e93f0aea?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D",
+    alt: "peigons",
+    description: "Peigons by leonardo",
+    category: "A",
+  },
+  {
+    id: 4,
+    src: "https://plus.unsplash.com/premium_photo-1728058959948-ca5fb8618179?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D",
+    alt: "Rose",
+    description: "B&W with the sky",
+    category: "A",
+  },
+  {
+    id: 5,
+    src: "https://plus.unsplash.com/premium_photo-1728499754017-d4ad4bf54c32?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D",
+    alt: "disco ball",
+    description: "disco ball",
+    category: "B",
+  },
+  {
+    id: 6,
+    src: "https://plus.unsplash.com/premium_photo-1728499753945-8c1b93a7fcac?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8",
+    alt: "mirrors",
+    category: "B",
+  },
+  {
+    id: 7,
+    src: "https://plus.unsplash.com/premium_photo-1728499754163-5117934344bc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHx8",
+    alt: "basket ball",
+    description: "basket ball",
+    category: "B",
+  },
+  {
+    id: 8,
+    src: "https://plus.unsplash.com/premium_photo-1729459036707-5583094c8d0b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIxfHx8ZW58MHx8fHx8",
+    alt: "van",
+    description: "van",
+    category: "C",
+  },
+  {
+    id: 9,
+    src: "https://plus.unsplash.com/premium_photo-1729092547788-371fe0b5b0cc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI5fHx8ZW58MHx8fHx8",
+    alt: "Seagles",
+    description: "Seagles",
+    category: "C",
+  },
+];
