@@ -1,0 +1,10 @@
+PATCH http://localhost:3000/some/path?queryParameter1=some value&queryParameter2=some other value
+header1: header1 value
+header2: header2 value
+
+
+###
+GET http://localhost:3000/home.html
+
+#### 
+POST http://locahost:3000/somepagenotexisting

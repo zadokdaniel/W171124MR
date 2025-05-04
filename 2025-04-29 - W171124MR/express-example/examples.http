@@ -1,0 +1,12 @@
+### 
+GET http://localhost:3000/home
+
+###
+GET http://localhost:3000/
+
+
+###
+GET http://localhost:3000/acbag
+
+####
+GET http://localhost:3000/a?password=1234

@@ -1,0 +1,21 @@
+@local=http://localhost:3000
+
+GET {{local}}
+
+### 
+GET {{local}}/home
+
+###
+GET {{local}}/messages
+
+###
+POST {{local}}/messages
+Content-Type: application/json
+
+{
+    "text": "hello"
+}
+
+
+###
+GET {{local}}/a/b/c/d/e/
