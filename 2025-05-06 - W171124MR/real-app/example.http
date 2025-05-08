@@ -1,4 +1,5 @@
 @local=http://localhost:3000
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODE5ZDE1MmJiYzkwYzRlMzk1NDkxMzkiLCJiaXoiOnRydWUsImlhdCI6MTc0NjY5Mjc2M30.xIn3UHBzdqaGAZDdh75UeEGEbMbxwbfmyJu6MW8q91A
 
 
 ### create user
@@ -25,4 +26,42 @@ Content-Type: application/json
 
 ### me
 GET {{local}}/api/users/me
-x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODE5ZDE1MmJiYzkwYzRlMzk1NDkxMzkiLCJiaXoiOnRydWUsImlhdCI6MTc0NjUzNTM4NH0.wgznytKIIv_RjZ7DS6ksSajl2kuvgDrBlFzvM4G4G3w
+x-auth-token: {{token}}
+
+### create a new card
+POST {{local}}/api/cards
+x-auth-token: {{token}}
+Content-Type: application/json
+
+{
+    "bizName":"sdafdsf",
+    "bizDescription":"dsfsdf",
+    "bizAddress":"dsfasdf",
+    "bizPhone":"sdfasdfsdf",
+    "bizImage":"sadfdsfasdfsdfsd"
+}
+
+### Get card
+GET {{local}}/api/cards/681c87037772f28835e34ca2
+x-auth-token: {{token}}
+
+### remove
+DELETE {{local}}/api/cards/681c87037772f28835e34ca2
+x-auth-token: {{token}}
+
+### update card
+PUT {{local}}/api/cards/681c87037772f28835e34ca2
+x-auth-token: {{token}}
+Content-Type: application/json
+
+{
+    "bizName":"BBBBBBBBBBBBBBBBBBBBBBBBBB",
+    "bizDescription":"dsfsdf",
+    "bizAddress":"dsfasdf",
+    "bizPhone":"sdfasdfsdf",
+    "bizImage":"sadfdsfasdfsdfsd"
+}
+
+
+###
+GET {{local}}/public/b.html
