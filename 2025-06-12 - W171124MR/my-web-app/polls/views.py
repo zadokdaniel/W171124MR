@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseNotAllowed
 # Create your views here.
 
@@ -19,10 +18,18 @@ def by_regexp(request):
     return HttpResponse('hello from regexp path ' + request.path)
 
 
+def get_date(request, date_value):
+    y, m, d = date_value
+    return HttpResponse(f"""
+                        year: {y}<br>
+                        month: {m}<br>
+                        day: {d}<br>
+                        """)
+
 # 1. create a new django project
 # 2. create a blog app -> /blog
 # 3. create a url which users a custom date converter -> /blog/posts/2025-05-03
-# 4 send a response with the selected date formatted as 
+# 4 send a response with the selected date formatted as
 
 # year: 2025
 # month: 05
