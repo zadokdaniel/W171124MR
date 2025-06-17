@@ -1,0 +1,42 @@
+{% extends 'polls/base.html' %}
+
+{% block title %}
+  Home - My Django Site
+{% endblock %}
+
+{% block content %}
+  <h2>Welcome to the Home Page!</h2>
+  <p>this is the main content page of our site!</p>
+  <p>It is nice to meet you!! 😎</p>
+
+  {% comment %}this is a multiline comment{% endcomment %}
+
+  <p>{{ first_name }}</p>
+  <p>{{ person.name }}</p>
+  <p>{{ pi|floatformat:2 }}</p>
+  <p>{{ today|date:'H:i' }}</p>
+
+  {% if is_happy %}
+    <p>fun to see you smile</p>
+  {% else %}
+    <p>cheer up!</p>
+  {% endif %}
+
+  {% if age > 100 %}
+    <p>how's retirement</p>
+  {% elif age > 50 %}
+    <p>middle age</p>
+  {% endif %}
+
+  <pre>
+    1. use the base template to configure index page 
+    2. use h2, p content 
+    3. only if exists show a list of lis with links to the /polls/23<ul>
+      <li>
+        <a href="/polls/4">the question text</a>
+      </li>
+    </ul>
+    
+    if no questions yet show a message saying there are none
+  </pre>
+{% endblock %}

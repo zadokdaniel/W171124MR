@@ -1,0 +1,662 @@
+[
+  {
+    "model": "polls.question",
+    "pk": 1,
+    "fields": {
+      "question_text": "What is your favorite programming language?",
+      "published_date": "2025-01-01T10:00:00Z"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 2,
+    "fields": {
+      "question_text": "Which development environment do you use most?",
+      "published_date": "2025-01-02T10:00:00Z"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 3,
+    "fields": {
+      "question_text": "What is the best time to be productive?",
+      "published_date": "2025-01-03T10:00:00Z"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 4,
+    "fields": {
+      "question_text": "Which front-end framework do you prefer?",
+      "published_date": "2025-01-04T10:00:00Z"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 5,
+    "fields": {
+      "question_text": "What do you use for version control?",
+      "published_date": "2025-01-05T10:00:00Z"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 6,
+    "fields": {
+      "question_text": "Which database do you trust most in production?",
+      "published_date": "2025-01-06T10:00:00Z"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 7,
+    "fields": {
+      "question_text": "How often do you write tests?",
+      "published_date": "2025-01-07T10:00:00Z"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 8,
+    "fields": {
+      "question_text": "What is your preferred backend language?",
+      "published_date": "2025-01-08T10:00:00Z"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 9,
+    "fields": {
+      "question_text": "What task runner or build tool do you use?",
+      "published_date": "2025-01-09T10:00:00Z"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 10,
+    "fields": {
+      "question_text": "How do you manage Python dependencies?",
+      "published_date": "2025-01-10T10:00:00Z"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 11,
+    "fields": {
+      "question_text": "What's your go-to code editor?",
+      "published_date": "2025-01-11T10:00:00Z"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 12,
+    "fields": {
+      "question_text": "Which OS do you primarily use for development?",
+      "published_date": "2025-01-12T10:00:00Z"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 13,
+    "fields": {
+      "question_text": "How do you deploy most of your projects?",
+      "published_date": "2025-01-13T10:00:00Z"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 14,
+    "fields": {
+      "question_text": "How do you prefer to learn new technologies?",
+      "published_date": "2025-01-14T10:00:00Z"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 15,
+    "fields": {
+      "question_text": "What\u2019s your favorite development methodology?",
+      "published_date": "2025-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 101,
+    "fields": {
+      "question": 1,
+      "choice_text": "Python",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 102,
+    "fields": {
+      "question": 1,
+      "choice_text": "JavaScript",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 103,
+    "fields": {
+      "question": 1,
+      "choice_text": "Java",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 104,
+    "fields": {
+      "question": 1,
+      "choice_text": "C++",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 105,
+    "fields": {
+      "question": 2,
+      "choice_text": "VS Code",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 106,
+    "fields": {
+      "question": 2,
+      "choice_text": "PyCharm",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 107,
+    "fields": {
+      "question": 2,
+      "choice_text": "Vim",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 108,
+    "fields": {
+      "question": 2,
+      "choice_text": "Sublime Text",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 109,
+    "fields": {
+      "question": 3,
+      "choice_text": "Morning",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 110,
+    "fields": {
+      "question": 3,
+      "choice_text": "Afternoon",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 111,
+    "fields": {
+      "question": 3,
+      "choice_text": "Evening",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 112,
+    "fields": {
+      "question": 3,
+      "choice_text": "Late night",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 113,
+    "fields": {
+      "question": 4,
+      "choice_text": "React",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 114,
+    "fields": {
+      "question": 4,
+      "choice_text": "Vue.js",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 115,
+    "fields": {
+      "question": 4,
+      "choice_text": "Angular",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 116,
+    "fields": {
+      "question": 4,
+      "choice_text": "Svelte",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 117,
+    "fields": {
+      "question": 5,
+      "choice_text": "Git",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 118,
+    "fields": {
+      "question": 5,
+      "choice_text": "Mercurial",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 119,
+    "fields": {
+      "question": 5,
+      "choice_text": "SVN",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 120,
+    "fields": {
+      "question": 5,
+      "choice_text": "None",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 121,
+    "fields": {
+      "question": 6,
+      "choice_text": "PostgreSQL",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 122,
+    "fields": {
+      "question": 6,
+      "choice_text": "MySQL",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 123,
+    "fields": {
+      "question": 6,
+      "choice_text": "MongoDB",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 124,
+    "fields": {
+      "question": 6,
+      "choice_text": "SQLite",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 125,
+    "fields": {
+      "question": 7,
+      "choice_text": "Always",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 126,
+    "fields": {
+      "question": 7,
+      "choice_text": "Sometimes",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 127,
+    "fields": {
+      "question": 7,
+      "choice_text": "Rarely",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 128,
+    "fields": {
+      "question": 7,
+      "choice_text": "Never",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 129,
+    "fields": {
+      "question": 8,
+      "choice_text": "Python",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 130,
+    "fields": {
+      "question": 8,
+      "choice_text": "Node.js",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 131,
+    "fields": {
+      "question": 8,
+      "choice_text": "Ruby",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 132,
+    "fields": {
+      "question": 8,
+      "choice_text": "Go",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 133,
+    "fields": {
+      "question": 9,
+      "choice_text": "Gulp",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 134,
+    "fields": {
+      "question": 9,
+      "choice_text": "Webpack",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 135,
+    "fields": {
+      "question": 9,
+      "choice_text": "Grunt",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 136,
+    "fields": {
+      "question": 9,
+      "choice_text": "Vite",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 137,
+    "fields": {
+      "question": 10,
+      "choice_text": "pip",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 138,
+    "fields": {
+      "question": 10,
+      "choice_text": "Poetry",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 139,
+    "fields": {
+      "question": 10,
+      "choice_text": "Conda",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 140,
+    "fields": {
+      "question": 10,
+      "choice_text": "Manual installs",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 141,
+    "fields": {
+      "question": 11,
+      "choice_text": "VS Code",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 142,
+    "fields": {
+      "question": 11,
+      "choice_text": "IntelliJ",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 143,
+    "fields": {
+      "question": 11,
+      "choice_text": "Emacs",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 144,
+    "fields": {
+      "question": 11,
+      "choice_text": "Notepad++",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 145,
+    "fields": {
+      "question": 12,
+      "choice_text": "Linux",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 146,
+    "fields": {
+      "question": 12,
+      "choice_text": "Windows",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 147,
+    "fields": {
+      "question": 12,
+      "choice_text": "macOS",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 148,
+    "fields": {
+      "question": 12,
+      "choice_text": "WSL",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 149,
+    "fields": {
+      "question": 13,
+      "choice_text": "Docker",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 150,
+    "fields": {
+      "question": 13,
+      "choice_text": "Heroku",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 151,
+    "fields": {
+      "question": 13,
+      "choice_text": "Manual",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 152,
+    "fields": {
+      "question": 13,
+      "choice_text": "CI/CD pipeline",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 153,
+    "fields": {
+      "question": 14,
+      "choice_text": "Courses",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 154,
+    "fields": {
+      "question": 14,
+      "choice_text": "Docs",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 155,
+    "fields": {
+      "question": 14,
+      "choice_text": "YouTube",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 156,
+    "fields": {
+      "question": 14,
+      "choice_text": "Experimenting",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 157,
+    "fields": {
+      "question": 15,
+      "choice_text": "Agile",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 158,
+    "fields": {
+      "question": 15,
+      "choice_text": "Waterfall",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 159,
+    "fields": {
+      "question": 15,
+      "choice_text": "Kanban",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 160,
+    "fields": {
+      "question": 15,
+      "choice_text": "Scrum",
+      "votes": 0
+    }
+  }
+]
