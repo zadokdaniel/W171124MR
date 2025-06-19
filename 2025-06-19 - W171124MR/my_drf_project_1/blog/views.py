@@ -1,13 +1,9 @@
 from .models import Post
 from .serializers import PostSerializer
-from rest_framework.response import Response
-from rest_framework import status
-
-from rest_framework.mixins import CreateModelMixin, ListModelMixin, DestroyModelMixin, RetrieveModelMixin, UpdateModelMixin
-from rest_framework.generics import GenericAPIView
+from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
 
 
-class PostView(GenericAPIView, ListModelMixin, CreateModelMixin):
+class PostView(ListCreateAPIView):
     name = "PostViews"
 
     queryset = Post.objects.all()
@@ -20,7 +16,7 @@ class PostView(GenericAPIView, ListModelMixin, CreateModelMixin):
         return self.create(request)
 
 
-class PostViewByPK(GenericAPIView, RetrieveModelMixin, UpdateModelMixin, DestroyModelMixin):
+class PostViewByPK(RetrieveUpdateDestroyAPIView):
     name = "PostByPKViews"
 
     queryset = Post.objects.all()
