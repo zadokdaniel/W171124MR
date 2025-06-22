@@ -3,7 +3,7 @@
 GET {{local}}/posts
 
 ###
-POST {{local}}/posts/
+POST {{local}}/post/
 Content-Type: application/json
 
 {

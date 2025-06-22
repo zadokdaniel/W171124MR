@@ -1,6 +1,12 @@
 from rest_framework import serializers
-from .models import Post
+from .models import Post, Comment
 import rest_framework.validators as v
+
+
+class CommentSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Comment
+        fields = '__all__'
 
 
 def validate_not_length_11(value):
@@ -34,9 +40,10 @@ class PostSerializer(serializers.ModelSerializer):
             validate_not_length_11
         ]
     )
+    comments = CommentSerializer(many=True, read_only=True)
 
     class Meta:
         model = Post
-        fields = ['id', 'title', 'content', 'created', 'updated']
+        fields = ['id', 'title', 'content', 'created', 'updated', 'comments']
         # fields = '__all__'
         # exclude = ['id']

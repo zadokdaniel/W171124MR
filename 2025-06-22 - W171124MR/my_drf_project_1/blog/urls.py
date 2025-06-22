@@ -5,10 +5,10 @@ from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
 
-router.register('boom', views.BoomViewSet, basename="post")
+router.register('posts', views.PostViewSet, basename="post")
+router.register('comments', views.CommentViewSet, basename="comment")
 
 urlpatterns = [
     path("", include(router.urls)),
-    path('posts/', views.PostView.as_view()),
-    path('posts/<int:pk>/', views.PostViewByPK.as_view())
+    path('api-auth/', include("rest_framework.urls"))
 ]
