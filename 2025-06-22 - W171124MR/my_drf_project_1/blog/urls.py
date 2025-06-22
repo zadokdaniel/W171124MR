@@ -10,5 +10,6 @@ router.register('comments', views.CommentViewSet, basename="comment")
 
 urlpatterns = [
     path("", include(router.urls)),
-    path('api-auth/', include("rest_framework.urls"))
+    path('api-auth/', include("rest_framework.urls")),
+    path("auth/", views.my_authenticated)
 ]
