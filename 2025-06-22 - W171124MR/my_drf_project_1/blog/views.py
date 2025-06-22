@@ -1,20 +1,17 @@
 from .models import Post, Comment
-from .serializers import PostSerializer, CommentSerializer
+from .serializers import PostSerializer, CommentSerializer, UserSerializer
 from rest_framework.viewsets import ModelViewSet
-from rest_framework.permissions import IsAuthenticatedOrReadOnly
-from .permissions import IsAdminOrModerator
+from django.contrib.auth.models import User
+
+
+class UserViewSet(ModelViewSet):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
 
 
 class PostViewSet(ModelViewSet):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
-    # permission_classes = [IsAdminOrModerator]
-    
-    def get_permissions(self):
-        if self.action in ['create', 'update', 'partial_update', 'destroy']:
-            return [IsAdminOrModerator]
-        
-        return [IsAuthenticatedOrReadOnly]
 
 
 class CommentViewSet(ModelViewSet):
