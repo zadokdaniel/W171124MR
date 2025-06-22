@@ -1,22 +1,22 @@
 from .models import Post, Comment
 from .serializers import PostSerializer, CommentSerializer
 from rest_framework.viewsets import ModelViewSet
-from rest_framework.response import Response
-from rest_framework.decorators import api_view, permission_classes
-from rest_framework.permissions import IsAdminUser, IsAuthenticated
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
+from .permissions import IsAdminOrModerator
 
 
 class PostViewSet(ModelViewSet):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
+    # permission_classes = [IsAdminOrModerator]
+    
+    def get_permissions(self):
+        if self.action in ['create', 'update', 'partial_update', 'destroy']:
+            return [IsAdminOrModerator]
+        
+        return [IsAuthenticatedOrReadOnly]
 
 
 class CommentViewSet(ModelViewSet):
     queryset = Comment.objects.all()
     serializer_class = CommentSerializer
-
-
-@api_view(['GET'])
-@permission_classes([IsAuthenticated])
-def my_authenticated(request):
-    return Response("hello from my_authenticated")
